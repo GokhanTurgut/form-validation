@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form action="" id="form" novalidate>
+      <div class="email">
+        <input type="email" placeholder="E-mail" id="email" autofocus />
+        <span class="material-icons error displayNone" id="emailError"
+          >error</span
+        >
+        <span class="material-icons check displayNone" id="emailCheck"
+          >check_circle</span
+        >
+        <small id="emailMassage" class="displayNone"
+          >Please enter a valid email!</small
+        >
+      </div>
+      <div class="country">
+        <input type="text" placeholder="Country" id="country" />
+        <span class="material-icons error displayNone" id="countryError"
+          >error</span
+        >
+        <span class="material-icons check displayNone" id="countryCheck"
+          >check_circle</span
+        >
+        <small id="countryMassage" class="displayNone"
+          >Please enter a country!</small
+        >
+      </div>
+      <div class="zipCode">
+        <input type="text" placeholder="Zip Code" id="zipCode" />
+        <span class="material-icons error displayNone" id="zipCodeError"
+          >error</span
+        >
+        <span class="material-icons check displayNone" id="zipCodeCheck"
+          >check_circle</span
+        >
+        <small id="zipCodeMassage" class="displayNone"
+          >Please enter a valid zip code!</small
+        >
+      </div>
+      <div class="password">
+        <input type="password" placeholder="Password" id="password" />
+        <span class="material-icons error displayNone" id="passwordError"
+          >error</span
+        >
+        <span class="material-icons check displayNone" id="passwordCheck"
+          >check_circle</span
+        >
+        <small id="passwordMassage" class="displayNone"
+          >Password must be 6 characters!</small
+        >
+      </div>
+      <div class="passwordConfirmation">
+        <input
+          type="password"
+          placeholder="Password Confirmation"
+          id="passwordConfirmation"
+        />
+        <span
+          class="material-icons error displayNone"
+          id="passwordConfirmationError"
+          >error</span
+        >
+        <span
+          class="material-icons check displayNone"
+          id="passwordConfirmationCheck"
+          >check_circle</span
+        >
+        <small id="passwordConfirmationMassage" class="displayNone"
+          >Passwords does not match!</small
+        >
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
